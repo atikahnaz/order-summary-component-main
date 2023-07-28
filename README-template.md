@@ -28,7 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![order](./screenshot.jpg)
+
+![Alt text](design/order-summary.jpeg)
 ![Alt text](design/order-summary.jpeg)
 
 
