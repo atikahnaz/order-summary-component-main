@@ -3,20 +3,29 @@
 
 body {
     font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .outer-container {
-    display:flex;
+    display:inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .order-summary {
     font-weight: 900;
     font-size: 28px;
     color: hsl(223, 47%, 23%);
+    margin-top: 40px;
 }
 
 .description {
@@ -28,13 +37,16 @@ body {
 
 .plan {
     display: flex;
+    position: relative;
     background-color: hsl(225, 100%, 98%);
-    width: 350px;
-    padding: 12px;
+    width: 320px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .music-icon {
-    display: flex;
+    position: relative;
+    left: 0px;
 }
 
 .annual-plan {
@@ -42,6 +54,40 @@ body {
     flex-direction: column;
     justify-content: space-around;
     font-size: 16px;
+    position: relative;
+    left: 20px;
+}
+
+.plan-title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.price {
+    color: hsl(224, 23%, 55%);
+}
+
+.change {
+    position: absolute;
+    right: 20px;
+    top: 35px;
     
-    
+    color: hsl(260, 98%, 39%);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-size: 15px;
+    padding: 20px 105px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 15px;
 }
